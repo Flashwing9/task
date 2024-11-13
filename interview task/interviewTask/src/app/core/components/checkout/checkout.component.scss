@@ -1,0 +1,98 @@
+main {
+  background-color: var(--gray-bg-color);
+}
+
+h3 {
+  position: absolute;
+  right: 0;
+  padding: 0.5rem;
+  background-color: var(--gray-bg-color);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topNavigation {
+  color: var(--font-under-gray-bg);
+}
+
+section {
+  //   background-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: white;
+  padding-top: 5rem;
+  margin: 1.5rem;
+}
+
+pre {
+  font-family: inherit;
+  padding-left: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.aboveFormText {
+  padding-left: 1.5rem;
+  color: black;
+  display: block;
+  position: absolute;
+}
+
+.formControl {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+input {
+  width: 150rem;
+  color: var(--font-under-gray-bg);
+  padding-left: 0.5rem;
+}
+
+input::placeholder {
+  color: var(--font-under-gray-bg);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.largerTextField {
+  height: 5rem;
+}
+
+p {
+  color: var(--error-message-color);
+  position: absolute;
+  right: 0;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--gray-bg-color);
+  padding: 1.5rem 1.5rem;
+}
+
+.proceedToShipping {
+  background-color: var(--positive-green);
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 4px;
+}

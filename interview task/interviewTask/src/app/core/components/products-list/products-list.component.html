@@ -1,0 +1,58 @@
+<main>
+  <aside>
+    no filters here no filters here no filters here no filters here no filters
+    here no filters here no filters here no filters here no filters here no
+    filters here no filters here no filters here no filters here no filters here
+    no filters here no filters here no filters here no filters here no filters
+    here no filters here no filters here no filters here no filters here here no
+    filters here no filters here no filters here no filters here here no filters
+    here no filters here no filters here no filters here here no filters here no
+    filters here no filters here no filters here here no filters here no filters
+    here no filters here no filters here here no filters here no filters here no
+    filters here no filters here here no filters here no filters here no filters
+    here no filters here here no filters here no filters here no filters here no
+    filters here here no filters here no filters here no filters here no filters
+    here here no filters here no filters here no filters here no filters here
+    here no filters here no filters here no filters here no filters here here no
+    filters here no filters here no filters here no filters here here no filters
+    here no filters here no filters here no filters here here no filters here no
+    filters here no filters here no filters here here no filters here no filters
+    here no filters here no filters here here no filters here no filters here no
+    filters here no filters here here no filters here no filters here no filters
+    here no filters here here no filters here no filters here no filters here no
+    filters here here no filters here no filters here no filters here no filters
+    here here no filters here no filters here no filters here no filters here
+    here no filters here no filters here no filters here no filters here here no
+    filters here no filters here no filters here no filters here here no filters
+    here no filters here no filters here no filters here here no filters here no
+    filters here no filters here no filters here here no filters here no filters
+    here no filters here no filters here here no filters here no filters here no
+    filters here no filters here here no filters here no filters here no filters
+    here no filters here here no filters here no filters here no filters here no
+    filters here here no filters here no filters here no filters here no filters
+    here here no filters here no filters here no filters here no filters here
+    here no filters here no filters here no filters here no filters here here no
+    filters here no filters here no filters here no filters here here no filters
+    here no filters here no filters here no filters here here no filters here no
+    filters here no filters here no filters here here no filters here no filters
+    here no filters here no filters here
+  </aside>
+  <section>
+    @for (itemCard of data; track itemCard) {
+    <div class="itemCard">
+      <div class="topBox">
+        <img src="{{ itemCard.image }}" alt="" />
+      </div>
+      <div class="bottomBox">
+        <p class="itemDescription">{{ itemCard.title }}</p>
+        <p class="priceTag">${{ itemCard.price }}</p>
+        <p class="itemRating">
+          <i class="fa-solid fa-star" style="color: #ffffff"></i>&nbsp;&nbsp;{{
+            itemCard.rating.rate
+          }}
+        </p>
+      </div>
+    </div>
+    }
+  </section>
+</main>

@@ -1,0 +1,55 @@
+nav {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  grid-auto-flow: column;
+  font-size: 1.3rem;
+  color: var(--base-font-color);
+}
+
+.leftSide,
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border: 0;
+}
+
+.hamburgerSlabs {
+  width: 1.5rem;
+  border: 0.1px solid var(--base-font-color);
+  border-radius: 5px;
+}
+
+.searchBar {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 6rem;
+  border-radius: 20px;
+  background-color: var(--gray-bg-color);
+  color: var(--font-under-gray-bg);
+}
+
+.fa-chevron-down {
+  font-size: 1rem;
+}
+
+.language > img {
+  width: 2.5rem;
+}
+
+.fa-cart-shopping,
+.fa-credit-card,
+.fa-bell,
+.fa-user,
+.fa-gear {
+  font-size: 1.7rem;
+}

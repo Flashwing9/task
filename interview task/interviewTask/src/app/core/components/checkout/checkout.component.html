@@ -1,0 +1,107 @@
+<main>
+  <h3>Ecommerce <span class="topNavigation">&nbsp;/&nbsp; Checkout</span></h3>
+  <section>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <pre>
+Shipping Information
+Fill all information below
+      </pre>
+      <div class="formControl">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          [formControl]="form.controls.name"
+          placeholder="Enter your name"
+        />
+        @if (nameIsInvalid) {
+        <p class="controlError">Please enter a valid name.</p>
+        }
+      </div>
+      <div class="formControl">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          [formControl]="form.controls.email"
+          placeholder="Enter your email"
+        />
+        @if (emailIsInvalid) {
+        <p class="controlError">Please enter a valid email address.</p>
+        }
+      </div>
+      <div class="formControl">
+        <label for="phone">Phone</label>
+        <input
+          id="phone"
+          type="number"
+          [formControl]="form.controls.phone"
+          placeholder="Enter your phone number"
+        />
+        @if (phoneIsInvalid) {
+        <p class="controlError">Please enter a valid phone number.</p>
+        }
+      </div>
+      <div class="formControl">
+        <label for="address">Address</label>
+        <input
+          id="address"
+          class="largerTextField"
+          type="text"
+          [formControl]="form.controls.address"
+          placeholder="Enter full address"
+        />
+        @if (addressIsInvalid) {
+        <p class="controlError">Please enter a valid address.</p>
+        }
+      </div>
+      <div class="formControl">
+        <label for="country">Country</label>
+        <input
+          id="country"
+          type="text"
+          [formControl]="form.controls.country"
+          placeholder="Select Country"
+        />
+        @if (countryIsInvalid) {
+        <p class="controlError">Please enter a valid country.</p>
+        }
+      </div>
+      <div class="formControl">
+        <label for="states">States</label>
+        <input
+          id="states"
+          type="text"
+          [formControl]="form.controls.states"
+          placeholder="Select States"
+        />
+        @if (statesIsInvalid) {
+        <p class="controlError">Please enter a valid state.</p>
+        }
+      </div>
+      <div class="formControl">
+        <label for="otherNotes">Other Notes</label>
+        <input
+          id="notes"
+          class="largerTextField"
+          type="text"
+          [formControl]="form.controls.notes"
+          placeholder="Your notes here..."
+        />
+        @if (notesIsInvalid) {
+        <p class="controlError">Please enter a valid note.</p>
+        }
+      </div>
+      <div class="buttonBox">
+        <button class="backToShoppingCart">
+          <i class="fa-solid fa-arrow-left" style="color: #7a7d8f"></i>
+          Back to Shopping Cart
+        </button>
+        <button class="proceedToShipping">
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+          Proceed to Shipping
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
