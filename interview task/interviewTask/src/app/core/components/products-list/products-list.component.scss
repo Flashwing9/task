@@ -32,8 +32,9 @@ section {
 }
 
 img {
-  width: auto;
-  height: 25rem;
+  width: 25rem;
+  height: 23rem;
+  object-fit: contain;
 }
 
 .bottomBox {
@@ -60,7 +61,7 @@ img {
 
 .itemRating {
   margin-top: 0.5rem;
-  padding-top: 0.2rem;
+  padding-top: 0.4rem;
   padding-left: 0.4rem;
   background-color: var(--positive-green);
   width: 5.2rem;
@@ -68,4 +69,21 @@ img {
   border-radius: 6px;
   color: white;
   font-size: 1.3rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  height: 50rem;
+}
+
+.filterButtons {
+  font-size: 1.5rem;
+}
+
+.filterButtons:hover {
+  color: var(--font-under-gray-bg);
 }

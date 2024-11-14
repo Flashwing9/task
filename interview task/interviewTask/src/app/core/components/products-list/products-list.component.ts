@@ -1,15 +1,5 @@
-import {
-  Component,
-  DestroyRef,
-  Inject,
-  inject,
-  OnInit,
-  signal,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Item } from '../item.model';
-import { CommonModule } from '@angular/common';
-import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-products-list',
@@ -20,7 +10,7 @@ import { NgFor } from '@angular/common';
 })
 export class ProductsListComponent implements OnInit {
   public data: any;
-  items: any[] = [];
+  public jelweleryData: any;
 
   constructor(private http: HttpClient) {}
 
@@ -34,5 +24,20 @@ export class ProductsListComponent implements OnInit {
       .subscribe((res: any) => {
         this.data = res;
       });
+  }
+
+  public fetchItemsbyCategory() {
+    this.http
+      .get<any[]>('https://fakestoreapi.com/products/category/jewelery')
+      .subscribe((res: any) => {
+        this.jelweleryData = res;
+        console.log('working jewelery category');
+      });
+  }
+
+  currentFilter: number = 0;
+
+  showItems(buttonNumber: number): void {
+    this.currentFilter = buttonNumber;
   }
 }
