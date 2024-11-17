@@ -22,6 +22,7 @@ export class CartComponent {
       .get<any[]>('https://fakestoreapi.com/carts/user/1')
       .subscribe((res: any) => {
         this.data = res;
+        console.log(res);
       });
   }
 }
